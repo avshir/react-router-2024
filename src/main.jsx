@@ -15,9 +15,9 @@ import Index from "./routes/index";
 import './index.css'
 import EditContact, { action as editAction } from "./routes/edit";
 import { action as destroyAction } from "./routes/destroy";
-// import About from "./routes/about";
-// import Info from "./routes/info";
-// import FormTest from "./routes/formTest";
+import About from "./routes/about";
+import Info from "./routes/info";
+import FormTest from "./routes/formTest";
 
 const router = createBrowserRouter([
   {
@@ -48,18 +48,18 @@ const router = createBrowserRouter([
             action: destroyAction,
             errorElement: <div>Oops! There was an error.</div>,
           },
-          // {
-          //   path: "about",
-          //   element: <About />,
-          // },
-          // {
-          //   path: "form",
-          //   element: <FormTest />,
-          // },
-          // {
-          //   path: "info",
-          //   element: <Info />,
-          // },
+          {
+            path: "about",
+            element: <About />,
+          },
+          {
+            path: "form",
+            element: <FormTest />,
+          },
+          {
+            path: "info",
+            element: <Info />,
+          },
         ],
       },
     ],
