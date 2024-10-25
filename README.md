@@ -2,7 +2,8 @@
 App based on [official tutorial 2024 from React-router-dom](https://reactrouter.com/en/main/start/tutorial)
 
 ## Used:
-- React + Vite,  createHashRouter(...) for routes
+- React + Vite, localforage
+- React-router-dom v.6.27.0, createHashRouter(...) for routes
 - useLocation(), useNavigate(), useParams()
 - loader, useLoaderData() action for Route, preloader
 - errorElement for error handling
@@ -11,8 +12,8 @@ App based on [official tutorial 2024 from React-router-dom](https://reactrouter.
 - etc
 
 ## Deploy gh-pages:
-changed createBrowserRouter to createHashRouter (with createBrowserRouter on gh-pages rotes not work)
-update deploy: npm run deploy
+- changed createBrowserRouter to createHashRouter (with createBrowserRouter on gh-pages rotes not work)
+- update deploy: npm run deploy
 
 used tutorials:
 - [Link 1](https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf) deploying vite-react-app to github-pages
