@@ -18,6 +18,8 @@ import { action as destroyAction } from "./routes/destroy";
 import About from "./routes/about";
 import Info from "./routes/info";
 import FormTest from "./routes/formTest";
+import { BlogPage, blogLoader } from "./routes/BlogPage";
+import { SinglePostPage, singlePostLoader } from "./routes/SinglePostPage";
 
 const router = createHashRouter([
   {
@@ -59,6 +61,20 @@ const router = createHashRouter([
           {
             path: "info",
             element: <Info />,
+          },
+          {
+            path: "posts",
+            element: <BlogPage />,
+            loader: blogLoader,
+          },
+          {
+            path: "posts/:id",
+            element: <SinglePostPage />,
+            loader: singlePostLoader,
+          },
+          {
+            path: "posts/:id/edit",
+            element: <p>Edit post</p>,
           },
         ],
       },

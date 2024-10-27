@@ -76,6 +76,9 @@ export default function Root() {
             <li>
               <NavLink to="/info">Info</NavLink>
             </li>
+            <li>
+              <NavLink to="/posts">Blog</NavLink>
+            </li>
             {contacts.length ? (
               <ul>
                 {contacts.map((contact) => (

@@ -408,3 +408,8 @@ i {
   justify-content: start;
   gap: 15px;
 }
+
+.loading {
+  font-weight: 600;
+  color: green;
+}
